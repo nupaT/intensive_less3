@@ -32,3 +32,13 @@ function changeSlide(direction) {
   mainSlide.style.transform = `translateY(-${activeSlideIndex * 100}vh)`;
   sidebar.style.transform = `translateY(${activeSlideIndex * 100}vh)`;
 }
+
+const key = document.addEventListener("keydown", keyName);
+function keyName(event) {
+  if (event.code === "ArrowUp") {
+    changeSlide("up");
+  }
+  if (event.code === "ArrowDown") {
+    changeSlide("down");
+  }
+}
