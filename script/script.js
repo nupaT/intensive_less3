@@ -35,10 +35,10 @@ function changeSlide(direction) {
 
 const key = document.addEventListener("keydown", keyName);
 function keyName(event) {
-  if (event.code === "ArrowUp") {
+  if (event.key === "ArrowUp") {
     changeSlide("up");
   }
-  if (event.code === "ArrowDown") {
+  if (event.key === "ArrowDown") {
     changeSlide("down");
   }
 }
