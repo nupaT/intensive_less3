@@ -94,6 +94,7 @@ h6 {
 body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
+  /* width: 100vw; */
 }
 
 .container {
@@ -126,6 +127,12 @@ body {
   font-size: 40px;
   margin-bottom: 10px;
   margin-top: -30px;
+}
+
+@media (max-width: 730px) {
+  .sidebar h1 {
+    font-size: 30px;
+  }
 }
 
 .main-slide {
@@ -167,6 +174,12 @@ button:focus {
   left: 35%;
   top: 50%;
   z-index: 100;
+}
+
+@media (max-width: 730px) {
+  .container .controls button {
+    top: 30%;
+  }
 }
 
 .container .controls .down-button {
