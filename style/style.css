@@ -131,7 +131,8 @@ body {
 
 @media (max-width: 730px) {
   .sidebar h1 {
-    font-size: 30px;
+    padding: 0 10px;
+    font-size: 7vw;
   }
 }
 
